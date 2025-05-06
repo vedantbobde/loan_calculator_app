@@ -1,0 +1,81 @@
+.toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 10px;
+    
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+    text-decoration: none;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  .toggle-switch input:checked + .slider {
+    background-color: #003f7f;
+  }
+  
+  .toggle-switch input:checked + .slider:before {
+    transform: translateX(25px);
+  }
+  
+  /* Optional: Light/Dark Mode Global Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .home-btn {
+    background-color: rgba(255, 255, 255, 0.1); /* Light overlay */
+    color: rgb(254, 249, 249);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+ 
+  

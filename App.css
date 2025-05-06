@@ -1,0 +1,207 @@
+/* General resets and base styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #1976d2;
+    color: white;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  .toggle-switch {
+    margin-left: 1rem;
+  }
+  
+  /* Dashboard section */
+  .dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .dashboard h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  input[type="number"] {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 200px;
+  }
+  
+  .calculate-btn {
+    background-color: #1976d2;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    
+  }
+  
+  .calculate-btn:hover {
+    background-color: #1259a7;
+  }
+  
+  .result-section {
+    margin-top: 2rem;
+  }
+  
+  /* Currency dropdown and Reset button */
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+  
+  select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .reset-btn {
+    padding: 0.5rem 1rem;
+    background-color: #aa00ff;
+    color: white;
+    border: 1px solid #aa00ff;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .reset-btn:hover {
+    background-color: #9200db;
+  }
+  
+  /* Amortization table */
+  .amortization-table-container {
+    overflow-y: auto;
+    max-height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .dark-mode .header {
+    background-color: #1e1e1e;
+  }
+  
+  .dark-mode input,
+  .dark-mode select {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    border: 1px solid #555;
+  }
+  
+  .dark-mode .calculate-btn {
+    background-color: #388e3c;
+  }
+  
+  .dark-mode .reset-btn {
+    background-color: #b000c0;
+  }
+  
+  .dark-mode .amortization-table-container {
+    border-color: #444;
+  }
+  
+  .dark-mode table {
+    background-color: #1e1e1e;
+  }
+  
+  .dark-mode thead {
+    background-color: #333;
+  }
+  
+  .dark-mode tr:hover {
+    background-color: #2a2a2a;
+  }
+
+  .error-page{
+    text-align: center;
+    margin-top: 250px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .error{
+    color: rgb(54, 142, 189);
+    border: 1px solid rgb(45, 132, 209);
+    border-radius: 5px;
+    padding: 10px 20px; 
+  }
